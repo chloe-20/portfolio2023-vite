@@ -1,3 +1,34 @@
-#intro {
-    
+#intro {height:100vh;}
+.intro__inner {display:flex;align-items:flex-start;justify-content:flex-end;flex-direction:column;width:100%;height:100%;padding:16px;}
+.intro__title {font-size:10vw;font-weight:800;line-height:1;white-space:nowrap;text-indent:-0.5vw;letter-spacing:-0.3vw;}
+.intro__text {display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;width:100%;height:40vh;background-color:var(--black);color:var(--white);}
+.intro__text .text {position:relative;z-index:100;transition:all 0.3s;font-size:3vw;font-weight:900;line-height:1;text-decoration:underline;text-align:center;cursor:all-scroll;}
+.intro__text .img {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);overflow:hidden;width:30vh;height:30vh;border-radius:50%;filter:grayscale(100%);transition:all 0.3s;}
+.intro__text:hover .text {opacity:0;}
+.intro__text:hover .img {filter:grayscale(0);}
+.intro__lines {width:100%;}
+.intro__lines .line {display:block;width:100%;height:1px;margin-bottom:0.5vw;background-color:var(--black);}
+.intro__lines.bottom .line {display:none;margin-top:0.5vw;margin-bottom:0;}
+.intro__lines .line:nth-child(1){height:1px;}
+.intro__lines .line:nth-child(2){height:2px;}
+.intro__lines .line:nth-child(3){height:5px;}
+.intro__lines .line:nth-child(4){height:9px;}
+.intro__lines .line:nth-child(5){height:13px;}
+.intro__lines .line:nth-child(6){height:17px;}
+.intro__lines .line:nth-child(7){height:25px;}
+.intro__lines.bottom .line:nth-child(1){height:25px;}
+.intro__lines.bottom .line:nth-child(2){height:17px;}
+.intro__lines.bottom .line:nth-child(3){height:13px;}
+.intro__lines.bottom .line:nth-child(4){height:9px;}
+.intro__lines.bottom .line:nth-child(5){height:5px;}
+.intro__lines.bottom .line:nth-child(6){height:2px;}
+.intro__lines.bottom .line:nth-child(7){height:1px;}
+
+@media all and (max-width:768px) {
+  .intro__inner {justify-content:center;}
+  .intro__lines.bottom .line {display:block;}
+  .intro__text .text {font-size:24px;}
+}
+@media all and (max-width:320px) {
+  .intro__title {display:none;}
 }
