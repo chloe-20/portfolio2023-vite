@@ -1,3 +1,3 @@
-export function port() {
+export function portfolio() {
   console.log(portfolio)
 }
