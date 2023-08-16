@@ -1,3 +1,29 @@
-#portfolio {
-    
+#portfolio {overflow:hidden;width:100%;margin-top:30vh;}
+.portfolio__inner {padding:16px;}
+.portfolio__title {width:100%;height:5vw;margin-bottom:16px;font-size:4vw;font-weight:900;line-height:1.6;font-family:var(--mainKor-font);color:var(--black100);border-bottom:0.4vw solid var(--black100);text-indent:-0.26vw;}
+.portfolio__title em {font-size:1.25rem;font-weight:400;line-height:2;}
+.portfolio__wrap {display:flex;flex-wrap:wrap;width:7000px;}
+.portfolio__item {width:500px;height:75vh;margin-right:20px;padding:2.5rem;background-color:var(--subBg100);}
+.portfolio__item.p1 {background-color:var(--subBg100);}
+.portfolio__item.p2 {background-color:var(--subBg200);}
+.portfolio__item.p3 {background-color:var(--subBg300);}
+.portfolio__item.p4 {background-color:var(--subBg400);}
+.portfolio__item.p5 {background-color:var(--subBg500);}
+.portfolio__item.p6 {background-color:var(--subBg100);}
+.portfolio__item.p7 {background-color:var(--subBg200);}
+.portfolio__item.p8 {background-color:var(--subBg300);}
+.portfolio__item.p9 {background-color:var(--subBg400);}
+.portfolio__item.p10 {background-color:var(--subBg500);}
+.portfolio__item .num {font-size:2rem;font-family:var(--mainNum-font);}
+.portfolio__item .img {display:block;margin-top:-20px;transition:margin-top 0.3s;}
+.portfolio__item:hover .img {margin-top:0;}
+.portfolio__item .img img {border-radius:5px;filter:saturate(0%);transition:all 0.3s;}
+.portfolio__item .img:hover img {filter:saturate(100%);}
+.portfolio__item .title {margin-bottom:1rem;padding:0.8rem 0;font-size:1.5rem;text-align:center;font-weight:700;color:var(--black100);border-bottom:2px solid var(--black100);}
+.portfolio__item .desc {font-size:1rem;}
+.portfolio__item .site {display:block;margin-top:1.5rem;padding:0.625rem 1.5rem;border:1px solid var(--black100);text-align:center;}
+
+@media all and (max-width:768px){
+  .portfolio__title {top:68px;z-index:1000;width:100%;height:auto;margin-bottom:16px;font-size:30px;background-color:var(--mainBg-color);}
+  .portfolio__item {width:400px;height:auto;padding:40px 30px;}
 }
