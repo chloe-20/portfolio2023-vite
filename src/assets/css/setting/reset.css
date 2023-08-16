@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* border-box 초기화 */
-*,*:before,*:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-
 /* Reset */
 html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,nav,section,article,header,footer,main,aside,dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
 body,input,select,textarea,button,img,fieldset {border:none;}
@@ -25,7 +22,7 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration,
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button { -webkit-appearance:none;}
-input[type="number"]{ -moz-appearance:textfield;}
+input[type="number"]{-moz-appearance:textfield;}
 input[type="number"],
 input[type="text"],
 input[type="password"],
@@ -36,21 +33,10 @@ input[type="date"],
 textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-border-radius:0;outline:0;}
 textarea {resize:none;}
 
-
-
+/* border-box 초기화 */
+*,*:before,*:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
 /* 스킵메뉴 */
-#skip a {
-    position: absolute;
-    left: 10px;
-    top: -92px;
-    z-index: 100000;
-    font-size: 1rem;
-    padding: 10px 30px;
-    color: var(--white);
-    background: var(--black);
-}
+#skip a {position:absolute;left:10px;top:-92px;z-index:100000;padding:10px 30px;font-size:1rem;color:var(--white);background:var(--black);}
 #skip a:focus,
-#skip a:active {
-    top: 10px;
-}
+#skip a:active {top:10px;}

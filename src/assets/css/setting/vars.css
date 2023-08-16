@@ -33,7 +33,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@media (max-width: 800px) {
+@media all and (max-width: 768px) {
   :root {
       font-size: 14px;
       line-height: 1.4;
