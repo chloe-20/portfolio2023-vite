@@ -1,3 +1,27 @@
-#site {
-    
+.site__inner {padding:16px;}
+.site__title {position:sticky;top:70px;left:0;width:70%;height:5vw;margin-bottom:100px;font-size:4vw;font-weight:900;line-height:1.6;font-family:var(--mainKor-font);color:var(--black100);border-bottom:0.4vw solid var(--black100);}
+.site__title em {font-size:1.25rem;font-weight:400;line-height:2;}
+.site__item {display:flex;align-items:center;justify-content:center;flex-direction:column;position:sticky;left:0;height:70vh;}
+.site__item.s1 {top:180px;background-color:var(--subBg100);}
+.site__item.s2 {top:200px;background-color:var(--subBg200);}
+.site__item.s3 {top:220px;background-color:var(--subBg300);}
+.site__item.s4 {top:240px;background-color:var(--subBg400);}
+.site__item .num {position:absolute;left:1vw;top:1vw;font-size:5vw;line-height:1;font-weight:900;font-family:var(--mainNum-font);}
+.site__item .text {margin-bottom:1rem;text-align:center;}
+.site__item .text > div {font-size:3vw;line-height:1;font-weight:900;text-decoration:underline;font-family:var(--mainEng-font);}
+.site__item .title {margin-bottom:1rem;font-family:var(--mainKor-font);}
+.site__item .btn a {text-decoration:underline;color:var(--black200);font-size:1rem;transition:all 0.3s;}
+.site__item .btn a:hover {color:var(--black);}
+.site__item .info {display:flex;justify-content:space-between;position:absolute;left:0;bottom:3%;width:98%;margin-left:1%;border-top:1px solid var(--black);border-bottom:1px solid var(--black);}
+.site__item .info span {font-family:var(--mainKor-font);font-size:12px;padding:3px 0;}
+
+@media all and (max-width:768px) {
+  .site__title {top:68px;z-index:1000;width:100%;height:auto;margin-bottom:10vw;font-size:30px;background-color:var(--mainBg-color);}
+  .site__item.s1 {top:140px;}
+  .site__item.s2 {top:160px;}
+  .site__item.s3 {top:180px;}
+  .site__item.s4 {top:200px;}
+  .site__item .num {left:20px;top:20px;font-size:80px;}
+  .site__item .text > div {font-size:26px;}
+  .site__item .info {flex-direction:column;width:90%;margin-left:5%;padding:5px 0;}
 }
