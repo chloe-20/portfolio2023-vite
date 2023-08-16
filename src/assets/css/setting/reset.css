@@ -7,7 +7,7 @@ ul,ol,li{list-style:none;}
 table{width:100%;border-spacing:0;border-collapse:collapse;}
 address,cite,code,em,i{font-style:normal;font-weight:normal;}
 label,img,input,select,textarea,button,a {vertical-align:middle;}
-u,ins,a{text-decoration:none;}
+u,ins,a{color:inherit;text-decoration:none;}
 button {cursor:pointer;}
 h1,h2,h3,h4,h5,h6,strong {font-weight:normal;}
 img {vertical-align:top;width:100%;}

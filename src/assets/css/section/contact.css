@@ -1,6 +1,6 @@
 #contact {height:100vh;}
 .contact__inner {align-items:flex-start;justify-content:flex-end;flex-direction:column;width:100%;height:100%;padding:16px;}
-.contact__title {font-size:10vw;line-height:1;font-weight:800;white-space:nowrap;text-indent:-0.5vw;letter-spacing:-0.3vw;}
+.contact__title {font-size:8.5vw;line-height:1;font-weight:800;white-space:nowrap;text-indent:-0.5vw;letter-spacing:-0.3vw;}
 .contact__text {display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;width:100%;height:40vh;background-color:var(--black);color:var(--white);}
 .contact__text .text {position:relative;z-index:100;font-size:3vw;line-height:1;font-weight:900;text-decoration:underline;text-align:center;transition:all 0.3s;cursor:all-scroll;}
 .contact__lines .line {display:block;width:100%;height:1px;margin-bottom:0.5vw;background-color:var(--black);}
