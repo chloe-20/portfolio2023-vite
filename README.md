@@ -6,7 +6,7 @@
 4. [next.js](https://github.com/chloe-20/portfolio2023-next)
 
 ## 완성작 보기 
-미리보기 : 
+미리보기 : https://portfolio2023-vite.netlify.app/
 
 ## 사용 스택
 - vite(https://ko.vitejs.dev/) 를 사용하여 사이트를 번들링하고 관리합니다.
